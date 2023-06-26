@@ -6,6 +6,11 @@ require('base.set')
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.numberwidth = 4
+-- hightlight column line nr
+vim.opt.cursorline = true
+vim.g.netrw_bufsettings = 'noma,nomod,nu,nowrap,ro,nobl'
+
+
 
 vim.cmd('cnoremap <C-e> <End>')         -- move to end of line
 vim.cmd('cnoremap <C-d> <Del>')         -- delete character under cursor
@@ -36,4 +41,5 @@ vim.api.nvim_set_keymap('n', '<Up>', '<Nop>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Down>', '<Nop>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Left>', '<Nop>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Right>', '<Nop>', { noremap = true, silent = true })
+
 
