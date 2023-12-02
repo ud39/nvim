@@ -2,9 +2,11 @@ require('base.remap')
 require('base.packer')
 require('base.filetype')
 require('base.set')
+require('base.conform')
 
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.opt.cursorline = true
 vim.opt.numberwidth = 4
 -- hightlight column line nr
 vim.opt.cursorline = true
@@ -23,7 +25,8 @@ vim.cmd('cnoremap <C-p> <Up>')          -- move to previous command-line history
 vim.cmd('cnoremap <C-r> <C-R>=i_ctrl_r()<CR>')  -- insert contents of register
 
 -- Coloring
-vim.api.nvim_set_hl(0, 'LineNr', { italic = true, bold = true, ctermfg='lightcyan'} )
+-- Set colors for relative line numbers
+
 
 
 
@@ -41,5 +44,4 @@ vim.api.nvim_set_keymap('n', '<Up>', '<Nop>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Down>', '<Nop>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Left>', '<Nop>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Right>', '<Nop>', { noremap = true, silent = true })
-
 

@@ -1,4 +1,6 @@
+
 require('base')
+
 
 vim.cmd([[
 augroup CLClear
@@ -6,6 +8,8 @@ augroup CLClear
     autocmd ColorScheme * highlight clear CursorLine
 augroup END
 ]])
+
+
 
 local lspconfig = require('lspconfig')
 
@@ -21,3 +25,4 @@ lspconfig.hls.setup{
     }
   }
 }
+
