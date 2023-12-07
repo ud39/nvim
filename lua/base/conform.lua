@@ -29,7 +29,7 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 -- Set up format-on-save autocmd using Conform
 require("conform").setup({
     format_on_save = {
-        timeout_ms = 500,
+        timeout_ms = 1000,
         lsp_fallback = true,
     },
 })
